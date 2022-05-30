@@ -1,13 +1,65 @@
- h1{
-     color: green;
+ h1 {
+     color: rgba(230, 17, 9, 0.545);
      text-align: center;
  }
- small{
+
+ small {
      font-size: 40px;
  }
+
  /* universal selector */
- *{color: green;}
+ /* *{color: green;} */
  /* tag/element selector */
- strong{
-     c
+ strong {
+     color: blue;
  }
+
+ /* atrribute selector */
+ a[target="_blank"] {
+     color: red;
+ }
+
+ /* id selector */
+ #id_selector {
+     color: pink;
+ }
+
+ /* Class Selector */
+ .class_selector {
+     color: blue;
+     letter-spacing: 10px;
+ }
+
+ /* descendent selector  */
+ .desc a {
+     color: yellow;
+     text-decoration: none;
+ }
+
+ /* child selector  */
+ .child>a {
+     color: red;
+ }
+
+ /* pseudo selector  */
+ a:link {
+     color: blue;
+ }
+
+ a:hover {
+     color: green;
+ }
+
+ a:active {
+     color: red;
+ }
+
+ a:visited {
+     color: gold;
+ }
+ /* Target  */
+ :target{ color: red;
+    border: 1px solid black; }
+   /* Border  */
+   .borderone{border: 10px solid red; }
+   .borderleft{border-left: 10px solid red;}
