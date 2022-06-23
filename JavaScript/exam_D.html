@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="MyForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="HTML">HTML</label>
+        <input type="number" id="HTML" name="HTML">
+        <br><br>
+        <label for="CSS">CSS</label>
+        <input type="number" id="CSS" name="CSS">
+        <br><br>
+        <label for="java">Java</label>
+        <input type="number" id="java" name="java">
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+        <script>
+            function result() {
+            let name = document . MyForm.name.value;
+            console.log(name);
+            let HTML = document.MyForm.HTML.value;
+            console.log(HTML);
+            let CSS = document.MyForm.CSS.value;
+            console.log(CSS);
+            let java = document.MyForm.java.value;
+            console.log(java);
+            if (HTML>=80 || CSS >=80 || java>=80){document.write('<h1>'+name+' is Passed with Distinction!</h1>')}
+            else if(HTML>=40 && CSS>=40 && java>=40){document.write('<h1>'+name+'is Passed</h1>')}
+            else{document.write('<h1>'+name+' is Failed</h1>')}
+            }
+            
+        </script>
+</body>
+</html>
