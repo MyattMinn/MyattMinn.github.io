@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"><br>
+    <br>
+    <button onclick="show()">Show</button>
+
+    <br><br>
+    <table border="1" cellspacing="0" cellpadding="20">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+     
+    <script>
+        let j = 1
+        function show(){
+            let name = document.querySelector('#name').value;
+            let email = document.querySelector('#email').value;
+            let tbody = document.querySelector('#tbody');
+
+            tbody.innerHTML += `<tr>
+                    <td>${j++}</td>
+                    <td>${name}</td>
+                    <td>${email}</td>
+                    </tr>`
+        }
+        
+    </script>
+</body>
+</html>

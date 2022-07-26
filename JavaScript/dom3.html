@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">CSS manimulation with DOM</h1>
+    <button onclick="action()">Action</button>
+    <br><br>
+    <img src="js.jpg" alt="" width="200" height="100" id="img">
+    <br><br>
+    <img src="jscup.jpg" alt="" width="300" height="200" id="image" onmouseover="big()" onmouseout="normal()">
+    <script>
+        function action(){
+            document.querySelector('#heading').style.color= 'red';
+            document.querySelector('#heading').style.backgroundColor= ' black';
+
+            let img = document.querySelector('#img');
+            img.style.width = '500px';
+            img.style.height = '300px';
+        }
+            let image = document.querySelector('#image');
+            function big(){
+                image.style.width = '500px'
+                image.style.height = '300px'
+            }
+            function normal(){
+                image.style.width='300px'
+                image.style.height='200px'
+            }
+        
+    </script>
+</body>
+</html>
